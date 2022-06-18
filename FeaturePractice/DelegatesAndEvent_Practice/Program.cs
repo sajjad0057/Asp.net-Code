@@ -80,4 +80,27 @@ foreach (Person p in persons)
 
 
 
+Console.WriteLine("===========================================================");
+Console.WriteLine("Prime Generator : ");
+
+
+PrimeGenerator primeGenerator = new PrimeGenerator();
+
+primeGenerator.PrimeGenerationComplete += PrintPrimes;
+
+primeGenerator.Generate(100);
+
+void PrintPrimes(List<int> primes)
+{
+    foreach (int p in primes)
+    {
+        Console.WriteLine($"{p} is prime number ");
+    }
+}
+
+
+
+
+
+
 
