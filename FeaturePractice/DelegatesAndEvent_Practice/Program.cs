@@ -15,6 +15,7 @@ Console.WriteLine($"-----{message}------");
 PrintUsingDelegate.Calculate(1, 3, Print1);
 PrintUsingDelegate.Calculate(2, 3, Print2);
 
+Console.WriteLine("------------------------------------------------------------------");
 Console.WriteLine("Another Delegate Examples - Perform Bubble Sort : ");
 
 
@@ -36,4 +37,47 @@ foreach (int i in a)
 {
     Console.Write($"{i} , ");
 }
+
+
+Console.WriteLine("------------------------------------------------------------------");
+Console.WriteLine("Another Delegate Examples -  ");
+Console.WriteLine("------------------------------------------------------------------");
+
+Person[] persons = new Person[4];
+
+persons[0] = new Person { Name = "sajjad" , Age = 25};
+persons[1] = new Person { Name = "zahan" , Age = 24};
+persons[2] = new Person { Name = "zahan", Age = 23 };
+persons[3] = new Person { Name = "Mahdi", Age = 27 };
+
+
+int SortPerson(Person p1, Person p2)
+{
+    if (p1.Name == p2.Name)
+    {
+
+        if (p1.Age < p2.Age)
+            return 1;
+        else if (p1.Age > p2.Age)
+            return -1;
+        return 0;
+
+    }
+    else
+        return p1.Name.CompareTo(p2.Name);
+
+}
+
+
+BubbleSort<Person>.Sort(persons, SortPerson);
+
+
+foreach (Person p in persons)
+{
+    Console.WriteLine($"Name : {p.Name} ; Age : {p.Age}");
+}
+
+
+
+
 
