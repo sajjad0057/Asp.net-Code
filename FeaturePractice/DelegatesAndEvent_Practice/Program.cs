@@ -88,7 +88,11 @@ PrimeGenerator primeGenerator = new PrimeGenerator();
 
 primeGenerator.PrimeGenerationComplete += PrintPrimes;
 
-primeGenerator.Generate(100);
+//Thread t = new Thread(()=> primeGenerator.Generate(10));
+//t.Start();
+//Console.ReadKey();
+
+primeGenerator.Generate(4);
 
 void PrintPrimes(List<int> primes)
 {
