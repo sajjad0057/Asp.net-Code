@@ -37,7 +37,14 @@ object instance = constructor.Invoke(new object[] { });
 property.SetValue(instance, propertyValue);
 
 
-Person person = instance as Person;
+//Person person = instance as Person;
 
-Console.WriteLine(person.Name);
+//Console.WriteLine(person.Name);
 
+
+PropertyInfo[] properties = type.GetProperties();
+
+foreach (PropertyInfo p in properties)
+{
+    Console.WriteLine($"{p.Name} : {p.GetValue(instance)}");
+}
