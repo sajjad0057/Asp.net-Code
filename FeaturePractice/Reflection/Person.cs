@@ -9,7 +9,12 @@ namespace Reflection
     public class Person
     {
         public string Name { get; set; }
-        public int Age { get; set; }
+        private int _Age { get; set; }
+
+        public Person(int age)
+        {
+            _Age = age;
+        }
 
     }
 }

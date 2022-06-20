@@ -30,9 +30,9 @@ set hare empty constructor , so parameter list is empty array . if Class contain
 parameterized constructor , when add parameter type in Type array
  */
 
-ConstructorInfo constructor = type.GetConstructor(new Type[] { });
+ConstructorInfo constructor = type.GetConstructor(new Type[] { typeof(int) });
 
-object instance = constructor.Invoke(new object[] { });
+object instance = constructor.Invoke(new object[] { 20 });
 
 property.SetValue(instance, propertyValue);
 
@@ -42,7 +42,7 @@ property.SetValue(instance, propertyValue);
 //Console.WriteLine(person.Name);
 
 
-PropertyInfo[] properties = type.GetProperties();
+PropertyInfo[] properties = type.GetProperties(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
 foreach (PropertyInfo p in properties)
 {
