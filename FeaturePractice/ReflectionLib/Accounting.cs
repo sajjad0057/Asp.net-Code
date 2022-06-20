@@ -21,5 +21,10 @@ namespace ReflectionLib
 
         }
 
+        public void Start()
+        {
+            Console.WriteLine("Accounting started !");
+        }
+
     }
 }

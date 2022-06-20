@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace ReflectionLib
 {
-    public class Inventory : IModule
+    public class HR : IModule
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
         public bool IsActive { get; set; }
 
-        public Inventory()
+
+        public HR()
         {
             Id = Guid.NewGuid();
-            Name = "Inventory";
+            Name = "HR";
             IsActive = true;
+
         }
 
         public void Start()
         {
-            Console.WriteLine("Inventory started !");
+            Console.WriteLine("HR started !");
         }
     }
 }

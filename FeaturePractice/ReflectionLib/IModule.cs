@@ -12,5 +12,7 @@ namespace ReflectionLib
         string Name { get; set; }
         bool IsActive { get; set; }
 
+        void Start();
+
     }
 }
