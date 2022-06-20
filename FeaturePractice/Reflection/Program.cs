@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Reflection;
 using System.Reflection;
+using System.Text.Json;
 
 Console.Write("Enter Class Name : ");
 string className = Console.ReadLine();
@@ -37,14 +38,18 @@ object instance = constructor.Invoke(new object[] { 20 });
 property.SetValue(instance, propertyValue);
 
 
-//Person person = instance as Person;
+Person person = instance as Person;
 
-//Console.WriteLine(person.Name);
+Console.WriteLine(person.Name);
+
+string jsonString = JsonSerializer.Serialize(person);
+
+Console.WriteLine(jsonString);
 
 
-PropertyInfo[] properties = type.GetProperties(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+//PropertyInfo[] properties = type.GetProperties(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
-foreach (PropertyInfo p in properties)
-{
-    Console.WriteLine($"{p.Name} : {p.GetValue(instance)}");
-}
+//foreach (PropertyInfo p in properties)
+//{
+//    Console.WriteLine($"{p.Name} : {p.GetValue(instance)}");
+//}
