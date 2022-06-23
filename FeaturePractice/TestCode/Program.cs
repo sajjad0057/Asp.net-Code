@@ -40,14 +40,19 @@ void Convert(Object obj)
             Console.WriteLine($"{property.Name} : {property.GetValue(obj)}");
         }
         else if (t.GetGenericTypeDefinition() == typeof(List<>))
-        {
-            var list = (IEnumerable<Topic>)property.GetValue(obj);
-            //Console.WriteLine(list.GetType());
-            //Console.WriteLine(property.GetValue(obj));
-            foreach (var topic in list)
+        {   
+            //var typeOfList  = t.GetGenericArguments()[0];
+
+            //Console.WriteLine($"+++{typeOfList.GetType()}");
+
+            var list = property.GetValue(obj);
+
+            foreach (var item in (IEnumerable<object>)list)
             {
-                Convert(topic);
+                Convert(item);
             }
+
+
 
         }
     }
