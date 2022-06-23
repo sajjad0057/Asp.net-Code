@@ -1,18 +1,55 @@
 ﻿using System;
+using System.Reflection;
+using TestCode;
 
-
-public class Program
+Course course = new Course
 {
-    public static void Main(string[] args)
+    Title = "c#",
+    Topics = new List<Topic>
     {
-        int Recursion(int x)
-        {
-            if (x <= 1)
-                return 1;
-            else 
-                return x * Recursion(x - 1);
-        }
+        new Topic { Title = "Basic C#" , Description = "dataType"},
+        new Topic { Title = "Advanced C#" , Description = "Reflection"}
+    },
+    Fees = 5000,
+};
 
-        Console.WriteLine(Recursion(3));
+
+
+//Console.WriteLine(course.Topics);
+//Console.WriteLine();
+//foreach (var topic in course.Topics)
+//{
+//    Console.WriteLine(topic);
+//}
+
+
+Convert(course);
+
+
+void Convert(Object obj)
+{
+    Type type = obj.GetType();
+    //Console.WriteLine(type);
+    PropertyInfo[] properties = type.GetProperties();
+    foreach (PropertyInfo property in properties)
+    {
+        Type t = property.PropertyType;
+
+        if (t == typeof(string) || t.IsPrimitive)
+        {
+            Console.WriteLine($"{property.Name} : {property.GetValue(obj)}");
+        }
+        else if (t.GetGenericTypeDefinition() == typeof(List<>))
+        {
+            var list = (IEnumerable<Topic>)property.GetValue(obj);
+            //Console.WriteLine(list.GetType());
+            //Console.WriteLine(property.GetValue(obj));
+            foreach (var topic in list)
+            {
+                Convert(topic);
+            }
+
+        }
     }
+
 }
