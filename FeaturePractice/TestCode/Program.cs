@@ -23,38 +23,27 @@ Course course = new Course
 //}
 
 
-Convert(course);
+
+JsonFormatter formatter = new JsonFormatter();
+
+string json = formatter.Convert(course);
+
+Console.WriteLine(json);
 
 
-void Convert(Object obj)
-{
-    Type type = obj.GetType();
-    //Console.WriteLine(type);
-    PropertyInfo[] properties = type.GetProperties();
-    foreach (PropertyInfo property in properties)
-    {
-        Type t = property.PropertyType;
-
-        if (t == typeof(string) || t.IsPrimitive)
-        {
-            Console.WriteLine($"{property.Name} : {property.GetValue(obj)}");
-        }
-        else if (t.GetGenericTypeDefinition() == typeof(List<>))
-        {   
-            //var typeOfList  = t.GetGenericArguments()[0];
-
-            //Console.WriteLine($"+++{typeOfList.GetType()}");
-
-            var list = property.GetValue(obj);
-
-            foreach (var item in (IEnumerable<object>)list)
-            {
-                Convert(item);
-            }
+//void Convert(Object obj)
+//{
+//    Type type = obj.GetType();
+//    //Console.WriteLine(type);
+//    PropertyInfo[] properties = type.GetProperties();
+//    foreach (PropertyInfo property in properties)
+//    {
+//        Type t = property.PropertyType;
 
 
+//        Console.WriteLine($"{property.Name} : {property.GetValue(obj)}");
 
-        }
-    }
 
-}
+//    }
+
+//}
