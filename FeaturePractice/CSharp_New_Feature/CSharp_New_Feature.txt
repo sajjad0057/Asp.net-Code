@@ -1,0 +1,39 @@
+﻿
+
+                                     New Features of C# : 11 , 10 , 9 , 8
+=========================================================================================================================
+
+C# 11
+------
+Generic attributes
+Raw string literals
+Auto-default struct
+
+
+C# 10
+------
+Record structs
+Global using directives
+File-scoped namespace declaration
+Assignment and declaration in same deconstruction
+
+
+C# 9
+------
+Record types
+Init only setters
+Top-level statements
+Fit and finish features
+
+
+C# 8
+-------
+Default interface methods
+Switch expressions
+Tuple patterns
+Using declarations
+Static local functions
+Nullable reference types
+Indices and ranges
+Null-coalescing assignment
+Enhancement of interpolated verbatim strings
