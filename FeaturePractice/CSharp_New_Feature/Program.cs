@@ -23,3 +23,14 @@ string longMessage = """
 
 
 Console.WriteLine(longMessage);
+
+
+var location = $$"""
+   You are at {{{age}}, {{name}}}   
+   """;
+
+
+Console.WriteLine(location);
+
+//// OutPut :
+//// You are at {25, sajjad}
