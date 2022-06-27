@@ -4,10 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_New_Feature
+namespace CSharp_New_Feature;
+
+public class Test1
 {
-    public class CSharp10Feature
-    {
-        Assembly assembly ;
-    }
+    Assembly assembly ;
 }
+
+public class Test2
+{
+
+}
+
