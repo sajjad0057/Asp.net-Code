@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace CSharp_New_Feature;
 
-public class Test1
+public class Person
 {
-    Assembly assembly ;
+    public string Name { get; set; }
+    public Address Location { get; set; }
 }
 
-public class Test2
-{
 
+public class Address
+{
+    public string Street { get; set; }
+    public string City { get; set; }
 }
 
