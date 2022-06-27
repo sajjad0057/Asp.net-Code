@@ -34,3 +34,10 @@ Console.WriteLine(location);
 
 //// OutPut :
 //// You are at {25, sajjad}
+///
+
+
+///// declaring System.Console namespace globally and use WriteLine() only to print something instead of Console.WriteLine() . 
+
+WriteLine($"Use only WriteLine to print something , " +
+    $"for this using \"static System.Console\" namespace locally or glabally");
