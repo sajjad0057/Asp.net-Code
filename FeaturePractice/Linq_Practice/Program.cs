@@ -125,7 +125,7 @@ public class Program
         Console.WriteLine($"Practice Groupings" +
             $"\n-----------------------------------------------------");
 
-        Groupings groupings = new Groupings();
+        //Groupings groupings = new Groupings();
 
         //Console.WriteLine(groupings.GroupingSyntax());
 
@@ -136,11 +136,25 @@ public class Program
 
         //Console.WriteLine(groupings.NestedGrouBy());
 
-        Console.WriteLine(groupings.NestedGroupByCustom());
+        //Console.WriteLine(groupings.NestedGroupByCustom());
 
 
         #endregion
 
+
+
+        #region JoinOperations
+
+        Console.WriteLine($"Practice JoinOperations" +
+            $"\n-----------------------------------------------------");
+
+        JoinOperations joinOperations = new JoinOperations();
+
+        //Console.WriteLine(joinOperations.GroupJoinQquery());
+
+        Console.WriteLine(joinOperations.LeftOuterJoin());
+
+        #endregion
 
 
     }
