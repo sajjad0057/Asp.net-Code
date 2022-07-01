@@ -167,16 +167,23 @@ public class Program
 
         #region Partitions
 
-        Partitions partitions = new Partitions();
+        //Partitions partitions = new Partitions();
 
-        Console.WriteLine(partitions.NestedTake());
+        //Console.WriteLine(partitions.NestedTake());
 
-        Console.WriteLine(partitions.NestedSkip());
+        //Console.WriteLine(partitions.NestedSkip());
 
-        Console.WriteLine(partitions.IndexedSkipWhile());
+        //Console.WriteLine(partitions.IndexedSkipWhile());
 
         #endregion
 
+        #region Quantifiers
+
+        Quantifiers quantifiers = new Quantifiers();
+
+        Console.WriteLine(quantifiers.GroupedAnyMatchedElements());
+
+        #endregion
 
     }
 }
