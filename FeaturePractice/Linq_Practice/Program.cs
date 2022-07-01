@@ -167,6 +167,9 @@ public class Program
 
         #region Partitions
 
+        //Console.WriteLine($"Practice Partitions" +
+        //    $"\n-----------------------------------------------------");
+
         //Partitions partitions = new Partitions();
 
         //Console.WriteLine(partitions.NestedTake());
@@ -179,9 +182,28 @@ public class Program
 
         #region Quantifiers
 
-        Quantifiers quantifiers = new Quantifiers();
+        //Console.WriteLine($"Practice Quantifiers" +
+        //    $"\n-----------------------------------------------------");
 
-        Console.WriteLine(quantifiers.GroupedAnyMatchedElements());
+        //Quantifiers quantifiers = new Quantifiers();
+
+        //Console.WriteLine(quantifiers.GroupedAnyMatchedElements());
+
+        #endregion
+
+        #region Restrictions
+
+        Console.WriteLine($"Practice Restrictions" +
+            $"\n-----------------------------------------------------");
+
+        Restrictions restrictions = new Restrictions();
+
+        Console.WriteLine(restrictions.ProductsOutOfStock());
+
+        Console.WriteLine("-----------------------------------------------");
+
+        Console.WriteLine(restrictions.ExpensiveProductsInStock());
+
 
         #endregion
 
