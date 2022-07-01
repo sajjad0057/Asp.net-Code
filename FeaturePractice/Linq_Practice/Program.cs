@@ -9,8 +9,8 @@ public class Program
 
         #region QueryExecution
 
-        Console.WriteLine($"Practice QueryExecution" +
-            $"\n-----------------------------------------------------");
+        //Console.WriteLine($"Practice QueryExecution" +
+        //    $"\n-----------------------------------------------------");
 
         //QueryExecution queryExecution = new QueryExecution();
         //queryExecution.DeferredExecution();
@@ -121,8 +121,8 @@ public class Program
 
         #region Groupings
 
-        Console.WriteLine($"Practice Groupings" +
-            $"\n-----------------------------------------------------");
+        //Console.WriteLine($"Practice Groupings" +
+        //    $"\n-----------------------------------------------------");
 
         //Groupings groupings = new Groupings();
 
@@ -193,17 +193,36 @@ public class Program
 
         #region Restrictions
 
-        Console.WriteLine($"Practice Restrictions" +
+        //Console.WriteLine($"Practice Restrictions" +
+        //    $"\n-----------------------------------------------------");
+
+        //Restrictions restrictions = new Restrictions();
+
+        //Console.WriteLine(restrictions.ProductsOutOfStock());
+
+        //Console.WriteLine("-----------------------------------------------");
+
+        //Console.WriteLine(restrictions.ExpensiveProductsInStock());
+
+
+        #endregion
+
+
+        #region SequenceOperations
+
+        Console.WriteLine($"Practice SequenceOperations" +
             $"\n-----------------------------------------------------");
 
-        Restrictions restrictions = new Restrictions();
+        SequenceOperations sequenceOperations = new SequenceOperations();
 
-        Console.WriteLine(restrictions.ProductsOutOfStock());
+        Console.WriteLine(sequenceOperations.Linq97());
 
-        Console.WriteLine("-----------------------------------------------");
+        Console.WriteLine(sequenceOperations.ConcatProjection());
 
-        Console.WriteLine(restrictions.ExpensiveProductsInStock());
 
+        Console.WriteLine("--------------------------------------------");
+
+        Console.WriteLine(sequenceOperations.DotProduct());
 
         #endregion
 
