@@ -207,22 +207,32 @@ public class Program
 
         #endregion
 
-
         #region SequenceOperations
 
-        Console.WriteLine($"Practice SequenceOperations" +
+        //Console.WriteLine($"Practice SequenceOperations" +
+        //    $"\n-----------------------------------------------------");
+
+        //SequenceOperations sequenceOperations = new SequenceOperations();
+
+        //Console.WriteLine(sequenceOperations.Linq97());
+
+        //Console.WriteLine(sequenceOperations.ConcatProjection());
+
+
+        //Console.WriteLine("--------------------------------------------");
+
+        //Console.WriteLine(sequenceOperations.DotProduct());
+
+        #endregion
+
+        #region SetOperations
+
+        Console.WriteLine($"Practice SetOperations" +
             $"\n-----------------------------------------------------");
 
-        SequenceOperations sequenceOperations = new SequenceOperations();
+        SetOperations setOperations = new SetOperations();
 
-        Console.WriteLine(sequenceOperations.Linq97());
-
-        Console.WriteLine(sequenceOperations.ConcatProjection());
-
-
-        Console.WriteLine("--------------------------------------------");
-
-        Console.WriteLine(sequenceOperations.DotProduct());
+        Console.WriteLine(setOperations.DistinctPropertyValues());
 
         #endregion
 
