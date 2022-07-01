@@ -99,14 +99,29 @@ public class Program
 
         #region ElementOperations
 
-        Console.WriteLine($"Practice ElementOperations" +
+        //Console.WriteLine($"Practice ElementOperations" +
+        //    $"\n-----------------------------------------------------");
+
+        //ElementOperations elementOperations = new ElementOperations();
+
+        //Console.WriteLine(elementOperations.MaybeFirstElement());
+
+        //Console.WriteLine(elementOperations.ElementAtPosition());
+
+        #endregion
+
+
+        #region Generators
+
+        Console.WriteLine($"Practice Generators" +
             $"\n-----------------------------------------------------");
 
-        ElementOperations elementOperations = new ElementOperations();
 
-        Console.WriteLine(elementOperations.MaybeFirstElement());
+        Generators generators = new Generators();
 
-        Console.WriteLine(elementOperations.ElementAtPosition());
+        Console.WriteLine(generators.RangeOfIntegers());
+
+        Console.WriteLine(generators.RepeatNumber());
 
         #endregion
 
