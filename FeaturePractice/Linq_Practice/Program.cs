@@ -21,7 +21,6 @@ public class Program
 
         #endregion
 
-
         #region Projections
 
         //Console.WriteLine($"Practice Projections" +
@@ -48,8 +47,6 @@ public class Program
         //// Here , there have more funactionality , see Projections class .
 
         #endregion
-
-
 
         #region AggregateOperators
 
@@ -83,7 +80,6 @@ public class Program
 
         #endregion
 
-
         #region Conversions
         //Console.WriteLine($"Practice Conversions" +
         //    $"\n-----------------------------------------------------");
@@ -110,18 +106,38 @@ public class Program
 
         #endregion
 
-
         #region Generators
 
-        Console.WriteLine($"Practice Generators" +
+        //Console.WriteLine($"Practice Generators" +
+        //    $"\n-----------------------------------------------------");
+
+        //Generators generators = new Generators();
+
+        //Console.WriteLine(generators.RangeOfIntegers());
+
+        //Console.WriteLine(generators.RepeatNumber());
+
+        #endregion
+
+
+        #region Groupings
+
+        Console.WriteLine($"Practice Groupings" +
             $"\n-----------------------------------------------------");
 
+        Groupings groupings = new Groupings();
 
-        Generators generators = new Generators();
+        //Console.WriteLine(groupings.GroupingSyntax());
 
-        Console.WriteLine(generators.RangeOfIntegers());
+        //Console.WriteLine(groupings.GroupByProperty());
 
-        Console.WriteLine(generators.RepeatNumber());
+        //Console.WriteLine(groupings.GroupByCategory());
+
+
+        //Console.WriteLine(groupings.NestedGrouBy());
+
+        Console.WriteLine(groupings.NestedGroupByCustom());
+
 
         #endregion
 
