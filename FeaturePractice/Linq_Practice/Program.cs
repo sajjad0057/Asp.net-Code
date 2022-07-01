@@ -9,6 +9,9 @@ public class Program
 
         #region QueryExecution
 
+        Console.WriteLine($"Practice QueryExecution" +
+            $"\n-----------------------------------------------------");
+
         //QueryExecution queryExecution = new QueryExecution();
         //queryExecution.DeferredExecution();
         //Console.WriteLine("--------------------------------------");
@@ -21,25 +24,62 @@ public class Program
 
         #region Projections
 
-        Projections projections = new Projections();
-        projections.SelectSyntax();
-        Console.WriteLine("--------------------------------------");
-        //projections.SelectProperty();
-        Console.WriteLine("--------------------------------------");
-        projections.TransformWithSelect();
-        Console.WriteLine("--------------------------------------");
-        projections.SelectByCaseAnonymous();
-        Console.WriteLine("--------------------------------------");
-        projections.SelectByCaseTuple();
-        Console.WriteLine("--------------------------------------");
-        projections.SelectAnonymousConstructions();
-        Console.WriteLine("---------------------------------------");
-        projections.SelectWithIndex();
-        Console.WriteLine("---------------------------------------");
-        //projections.IndexedSelectMany();
-        Console.WriteLine("--------------------------------------");
+        //Console.WriteLine($"Practice Projections" +
+        //    $"\n-----------------------------------------------------");
+
+        //Projections projections = new Projections();
+        //projections.SelectSyntax();
+        //Console.WriteLine("--------------------------------------");
+        ////projections.SelectProperty();
+        //Console.WriteLine("--------------------------------------");
+        //projections.TransformWithSelect();
+        //Console.WriteLine("--------------------------------------");
+        //projections.SelectByCaseAnonymous();
+        //Console.WriteLine("--------------------------------------");
+        //projections.SelectByCaseTuple();
+        //Console.WriteLine("--------------------------------------");
+        //projections.SelectAnonymousConstructions();
+        //Console.WriteLine("---------------------------------------");
+        //projections.SelectWithIndex();
+        //Console.WriteLine("---------------------------------------");
+        ////projections.IndexedSelectMany();
+        //Console.WriteLine("--------------------------------------");
 
         //// Here , there have more funactionality , see Projections class .
+
+        #endregion
+
+
+
+        #region AggregateOperators
+
+        Console.WriteLine($"Practice AggregateOperators" +
+            $"\n-----------------------------------------------------");
+
+        AggregateOperators aggregateOperators = new AggregateOperators();
+
+        Console.WriteLine(aggregateOperators.CountConditional());
+
+        //Console.WriteLine(aggregateOperators.NestedCount());
+
+        Console.WriteLine(aggregateOperators.GroupedCount());
+
+        Console.WriteLine(aggregateOperators.MinProjection());
+
+        Console.WriteLine(aggregateOperators.MinGrouped());
+
+        Console.WriteLine($"---------------------------------------");
+
+        Console.WriteLine(aggregateOperators.MinEachGroup());
+
+        Console.WriteLine(aggregateOperators.MaxGrouped());
+
+        Console.WriteLine($"----------------------------------------");
+
+        Console.WriteLine(aggregateOperators.AggregateSyntax());
+
+        Console.WriteLine(aggregateOperators.SeededAggregate());
+
 
         #endregion
 
