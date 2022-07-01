@@ -85,18 +85,28 @@ public class Program
 
 
         #region Conversions
-        Console.WriteLine($"Practice Conversions" +
+        //Console.WriteLine($"Practice Conversions" +
+        //    $"\n-----------------------------------------------------");
+
+        //Conversions conversions = new Conversions();
+
+        //Console.WriteLine(conversions.ConvertToList());
+        //Console.WriteLine(conversions.ConvertToDictionary());
+
+        //Console.WriteLine(conversions.ConvertSelectedItems());
+
+        #endregion
+
+        #region ElementOperations
+
+        Console.WriteLine($"Practice ElementOperations" +
             $"\n-----------------------------------------------------");
 
+        ElementOperations elementOperations = new ElementOperations();
 
-        Conversions conversions = new Conversions();
+        Console.WriteLine(elementOperations.MaybeFirstElement());
 
-        Console.WriteLine(conversions.ConvertToList());
-        Console.WriteLine(conversions.ConvertToDictionary());
-
-        Console.WriteLine(conversions.ConvertSelectedItems());
-
-
+        Console.WriteLine(elementOperations.ElementAtPosition());
 
         #endregion
 
