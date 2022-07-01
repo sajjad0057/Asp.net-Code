@@ -119,7 +119,6 @@ public class Program
 
         #endregion
 
-
         #region Groupings
 
         Console.WriteLine($"Practice Groupings" +
@@ -141,18 +140,28 @@ public class Program
 
         #endregion
 
-
-
         #region JoinOperations
 
-        Console.WriteLine($"Practice JoinOperations" +
+        //Console.WriteLine($"Practice JoinOperations" +
+        //    $"\n-----------------------------------------------------");
+
+        //JoinOperations joinOperations = new JoinOperations();
+
+        ////Console.WriteLine(joinOperations.GroupJoinQquery());
+
+        //Console.WriteLine(joinOperations.LeftOuterJoin());
+
+        #endregion
+
+        #region Orderings
+
+        Console.WriteLine($"Practice Orderings" +
             $"\n-----------------------------------------------------");
 
-        JoinOperations joinOperations = new JoinOperations();
+        Orderings orderings = new Orderings();
 
-        //Console.WriteLine(joinOperations.GroupJoinQquery());
+        Console.WriteLine(orderings.OrderByWithCustomComparer());
 
-        Console.WriteLine(joinOperations.LeftOuterJoin());
 
         #endregion
 
