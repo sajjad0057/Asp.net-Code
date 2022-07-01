@@ -53,32 +53,49 @@ public class Program
 
         #region AggregateOperators
 
-        Console.WriteLine($"Practice AggregateOperators" +
+        //Console.WriteLine($"Practice AggregateOperators" +
+        //    $"\n-----------------------------------------------------");
+
+        //AggregateOperators aggregateOperators = new AggregateOperators();
+
+        //Console.WriteLine(aggregateOperators.CountConditional());
+
+        ////Console.WriteLine(aggregateOperators.NestedCount());
+
+        //Console.WriteLine(aggregateOperators.GroupedCount());
+
+        //Console.WriteLine(aggregateOperators.MinProjection());
+
+        //Console.WriteLine(aggregateOperators.MinGrouped());
+
+        //Console.WriteLine($"---------------------------------------");
+
+        //Console.WriteLine(aggregateOperators.MinEachGroup());
+
+        //Console.WriteLine(aggregateOperators.MaxGrouped());
+
+        //Console.WriteLine($"----------------------------------------");
+
+        //Console.WriteLine(aggregateOperators.AggregateSyntax());
+
+        //Console.WriteLine(aggregateOperators.SeededAggregate());
+
+
+        #endregion
+
+
+        #region Conversions
+        Console.WriteLine($"Practice Conversions" +
             $"\n-----------------------------------------------------");
 
-        AggregateOperators aggregateOperators = new AggregateOperators();
 
-        Console.WriteLine(aggregateOperators.CountConditional());
+        Conversions conversions = new Conversions();
 
-        //Console.WriteLine(aggregateOperators.NestedCount());
+        Console.WriteLine(conversions.ConvertToList());
+        Console.WriteLine(conversions.ConvertToDictionary());
 
-        Console.WriteLine(aggregateOperators.GroupedCount());
+        Console.WriteLine(conversions.ConvertSelectedItems());
 
-        Console.WriteLine(aggregateOperators.MinProjection());
-
-        Console.WriteLine(aggregateOperators.MinGrouped());
-
-        Console.WriteLine($"---------------------------------------");
-
-        Console.WriteLine(aggregateOperators.MinEachGroup());
-
-        Console.WriteLine(aggregateOperators.MaxGrouped());
-
-        Console.WriteLine($"----------------------------------------");
-
-        Console.WriteLine(aggregateOperators.AggregateSyntax());
-
-        Console.WriteLine(aggregateOperators.SeededAggregate());
 
 
         #endregion
