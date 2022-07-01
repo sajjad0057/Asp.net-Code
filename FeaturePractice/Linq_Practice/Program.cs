@@ -155,13 +155,25 @@ public class Program
 
         #region Orderings
 
-        Console.WriteLine($"Practice Orderings" +
-            $"\n-----------------------------------------------------");
+        //Console.WriteLine($"Practice Orderings" +
+        //    $"\n-----------------------------------------------------");
 
-        Orderings orderings = new Orderings();
+        //Orderings orderings = new Orderings();
 
-        Console.WriteLine(orderings.OrderByWithCustomComparer());
+        //Console.WriteLine(orderings.OrderByWithCustomComparer());
 
+
+        #endregion
+
+        #region Partitions
+
+        Partitions partitions = new Partitions();
+
+        Console.WriteLine(partitions.NestedTake());
+
+        Console.WriteLine(partitions.NestedSkip());
+
+        Console.WriteLine(partitions.IndexedSkipWhile());
 
         #endregion
 
