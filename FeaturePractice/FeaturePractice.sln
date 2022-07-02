@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCode", "TestCode\TestCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReflectionLib", "ReflectionLib\ReflectionLib.csproj", "{E0813700-3CD3-42E0-8DB4-8ABAAD28627C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_New_Feature", "CSharp_New_Feature\CSharp_New_Feature.csproj", "{478CB878-E896-424A-A445-2CCD33B155DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_New_Feature", "CSharp_New_Feature\CSharp_New_Feature.csproj", "{478CB878-E896-424A-A445-2CCD33B155DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threading", "Threading\Threading.csproj", "{06FD0048-00AD-4ADF-BF8A-9856F781A2FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{478CB878-E896-424A-A445-2CCD33B155DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{478CB878-E896-424A-A445-2CCD33B155DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{478CB878-E896-424A-A445-2CCD33B155DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06FD0048-00AD-4ADF-BF8A-9856F781A2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06FD0048-00AD-4ADF-BF8A-9856F781A2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06FD0048-00AD-4ADF-BF8A-9856F781A2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06FD0048-00AD-4ADF-BF8A-9856F781A2FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
