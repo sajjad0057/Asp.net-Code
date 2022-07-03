@@ -14,9 +14,11 @@ namespace Threading
             
             Task<string> task = File.ReadAllTextAsync(path);
 
-            task.Wait();     //// here wait for finishing task
+            task.Wait();     //// here wait for finishing task , by this process being converted synchronous . 
 
             string text = task.Result;
+
+            Console.WriteLine(text);
 
         }
 
