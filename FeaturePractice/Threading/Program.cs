@@ -43,7 +43,7 @@ var filePath = Path.Combine(folderPath.FullName, "Text.txt");
 
 AsyncExample asyncExample = new AsyncExample();
 
-asyncExample.Copy(filePath);
+await asyncExample.Copy(filePath);
 
 
 

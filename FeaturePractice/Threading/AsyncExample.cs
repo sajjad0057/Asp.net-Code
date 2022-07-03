@@ -8,15 +8,14 @@ namespace Threading
 {
     public class AsyncExample
     {
-        public void Copy(string path)
+        /// <summary>
+        /// if return type like void use just Task , otherwise use Task<returnType> .
+        /// </summary>
+        public async Task Copy(string path)
         {
             ////File.ReadAllText() return only string , but File.ReadALlTextAsync() return a Task object .
             
-            Task<string> task = File.ReadAllTextAsync(path);
-
-            task.Wait();     //// here wait for finishing task , by this process being converted synchronous . 
-
-            string text = task.Result;
+            string text = await File.ReadAllTextAsync(path);  // for using await keywork , here waited for next line code execution untill finished this task .
 
             Console.WriteLine(text);
 
