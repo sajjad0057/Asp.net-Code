@@ -23,5 +23,17 @@ namespace Threading
         }
 
 
+        public async Task PrintAsync()  //// here make a synchronous function to asynchronous signature                                       
+        {
+            await Task.Run(() =>
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            });
+        }
+
+
     }
 }

@@ -46,6 +46,8 @@ AsyncExample asyncExample = new AsyncExample();
 
 asyncExample.CopyAsync(filePath1, filePath2);
 
+await asyncExample.PrintAsync();
+
 
 
 
