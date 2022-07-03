@@ -11,15 +11,17 @@ namespace Threading
         /// <summary>
         /// if return type like void use just Task , otherwise use Task<returnType> .
         /// </summary>
-        public async Task Copy(string path)
+        public async Task CopyAsync(string path1, string path2)
         {
             ////File.ReadAllText() return only string , but File.ReadALlTextAsync() return a Task object .
             
-            string text = await File.ReadAllTextAsync(path);  // for using await keywork , here waited for next line code execution untill finished this task .
-
-            Console.WriteLine(text);
+            using Task<string> text1 = File.ReadAllTextAsync(path1); 
+            using Task<string> text2 = File.ReadAllTextAsync(path2);
+            Task.WaitAll(text1, text2); //  here waited for next line code execution untill finished all task .
+            Console.WriteLine(text1+"\n"+text2);
 
         }
+
 
     }
 }

@@ -37,13 +37,14 @@ Console.WriteLine($"Practice async / await : \n" +
     $"-------------------------------------------------------------");
 
 var folderPath = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.Parent;
-var filePath = Path.Combine(folderPath.FullName, "Text.txt");
+var filePath1 = Path.Combine(folderPath.FullName, "Text.txt");
+var filePath2 = Path.Combine(folderPath.FullName, "Text2.txt");
 
 ////Console.WriteLine(filePath);
 
 AsyncExample asyncExample = new AsyncExample();
 
-await asyncExample.Copy(filePath);
+asyncExample.CopyAsync(filePath1, filePath2);
 
 
 
